@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Oxygen:wght@300;400;700&display=swap');
 /* Font Family */
 body {
+    max-width: 1200px;
     font-family: 'Macondo', 'Oxygen';
     font-size: 22px;
     width: 100%;
