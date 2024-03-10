@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atuhu Favourite - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Atuhu Favourite's course assignment portal.">
+    <meta name="author" content="Atuhu Favourite">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Atuhu Favourite">
+    <meta property="og:url" content="https://OhayitsFay.github.io/wdd230">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.jpeg" alt="chamber commerce">
+        </a>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.jpg" alt="People enjoying white water rafting">
+            </div>
+        <section class="hero-msg">
+            <h2>Welcome to the Chamber of Commerce</h2>
+            <p>Join us today!</p>
+            <a href="form.html" class="cta-button">Join Now</a>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="current-events">
+            <h2>Current Events</h2>
+            <div class="event">
+                <h3>Event Title</h3>
+                <p>Date: MM/DD/YYYY</p>
+                <p>Location: Venue Name</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- More events can be added dynamically -->
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Current Weather: Sunny</p>
+            <p>Temperature: 25°C</p>
+        </section>
+
+        <!-- Spotlights Section -->
+        <section class="spotlight1">
+            <img class="icon" src="images/fire-icon.jpg" alt="fire icon">
+            <h2>Spotlight 1</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="spotlight2">
+            <img class="icon" src="images/fire-icon.jpg" alt="fire icon">
+            <h2>Camping</h2>
+        </section>
+        <section class="spotlight1">
+            <img class="icon" src="images/fire-icon.jpg" alt="fire icon">
+            <h2>Spotlight 1</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="currentYear"></span> - Atuhu Favourite - Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,12 +1,17 @@
+
+document.getElementById("darkModeToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     // Array of learning activities
     const learningActivities = [
         { week: 'Week 1', activity: 'Layout | Media Query | JS Pen' },
-        { week: 'Week 2', activity: '' }, // Placeholder for Week 2
-        { week: 'Week 3', activity: '' }, // Placeholder for Week 3
-        { week: 'Week 4', activity: '' }, // Placeholder for Week 4
-        { week: 'Week 5', activity: '' }, // Placeholder for Week 5
-        { week: 'Week 6', activity: '' }  // Placeholder for Week 6
+        { week: 'Week 2', activity: '' },
+        { week: 'Week 3', activity: '' },
+        { week: 'Week 4', activity: '' },
+        { week: 'Week 5', activity: '' },
+        { week: 'Week 6', activity: '' }
     ];
 
     // Get the ul element to populate
@@ -16,12 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
     learningActivities.forEach(activity => {
         const listItem = document.createElement('li');
         const anchor = document.createElement('a');
-        anchor.href = '#'; // Placeholder link
+        anchor.href = '#' + activity.week.toLowerCase().replace(' ', '-'); // Generating dynamic anchor links
         anchor.textContent = `${activity.week}: ${activity.activity}`;
         listItem.appendChild(anchor);
         learningList.appendChild(listItem);
     });
-    
+
+    // Get current year for footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
     // Get last modified date
     const lastModifiedDate = document.lastModified;
 

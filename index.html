@@ -6,16 +6,28 @@
     <title>Atuhu Favourite - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development. Atuhu Favourite's course assignment portal.">
     <meta name="author" content="Atuhu Favourite">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <linkf rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Atuhu Favourite">
+    <meta property="og:url" content="https://OhayitsFay.github.io/wdd230">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
     <header>
         <img src="images/photo.jpg" alt="Atuhu Favourite">
         <span>Atuhu Favourite</span>
+        <button id="darkModeToggle">Dark Mode</button>
+        <!-- Hamburger menu icon for mobile view -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
 
-    <nav>
+    <nav id="mainMenu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -40,10 +52,12 @@
     </main>
 
     <footer>
-        <p>copyright &copy; 2024 - Atuhu Favourite - Lagos, Nigeria</p>
+        <p>Copyright &copy; <span id="currentYear"></span> - Atuhu Favourite - Lagos, Nigeria</p>
         <p id="lastModified"></p>
     </footer>
 
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/menuToggle.js"></script>
+    
 </body>
 </html>

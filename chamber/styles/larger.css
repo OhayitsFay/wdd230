@@ -1,0 +1,32 @@
+/* Larger Screens Styles */
+
+/* Responsive navigation */
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    flex-direction: row;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for smaller screens */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin: 0;
+        padding: 0.5rem;
+    }
+}

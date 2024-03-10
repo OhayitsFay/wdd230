@@ -14,10 +14,14 @@
     }
 
     /* Card Styles */
-    .card1 {
-        width: calc(50% - 0);
-    }
+    .card1,
     .card2 {
         width: calc(50% - 0);
     }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #111;
+    color: #fff;
 }
