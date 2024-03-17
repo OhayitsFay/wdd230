@@ -1,17 +1,12 @@
-
-document.getElementById("darkModeToggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     // Array of learning activities
     const learningActivities = [
         { week: 'Week 1', activity: 'Layout | Media Query | JS Pen' },
-        { week: 'Week 2', activity: '' },
-        { week: 'Week 3', activity: '' },
-        { week: 'Week 4', activity: '' },
-        { week: 'Week 5', activity: '' },
-        { week: 'Week 6', activity: '' }
+        { week: 'Week 2', activity: 'Design | Menu | BOM-25' }, // Placeholder for Week 2
+        { week: 'Week 3', activity: '#' }, // Placeholder for Week 3
+        { week: 'Week 4', activity: '#' }, // Placeholder for Week 4
+        { week: 'Week 5', activity: '#' }, // Placeholder for Week 5
+        { week: 'Week 6', activity: '#' }  // Placeholder for Week 6
     ];
 
     // Get the ul element to populate
@@ -21,15 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
     learningActivities.forEach(activity => {
         const listItem = document.createElement('li');
         const anchor = document.createElement('a');
-        anchor.href = '#' + activity.week.toLowerCase().replace(' ', '-'); // Generating dynamic anchor links
+        anchor.href = '#'; // Placeholder link
         anchor.textContent = `${activity.week}: ${activity.activity}`;
         listItem.appendChild(anchor);
         learningList.appendChild(listItem);
     });
-
-    // Get current year for footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-
+    
     // Get last modified date
     const lastModifiedDate = document.lastModified;
 
@@ -38,4 +30,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set the text content of the element to the last modified date
     lastModifiedElement.textContent = "Last Modified: " + lastModifiedDate;
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.getElementById('menuIcon');
+    const mainMenu = document.getElementById('mainMenu');
+
+    function toggleMenu() {
+        mainMenu.classList.toggle("show");
+    }
+
+    menuIcon.addEventListener('click', toggleMenu);
+});
+
+
+// Dark mode toggle function
+document.addEventListener("DOMContentLoaded", function() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    
+    darkModeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+    });
 });

@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <!-- Social media meta tags -->
     <meta property="og:title" content="Atuhu Favourite">
-    <meta property="og:url" content="https://OhayitsFay.github.io/wdd230">
+    <meta property="og:URL" content="https://OhayitsFay.github.io/wdd230">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
 </head>
 <body>
     <header>
-        <img src="images/photo.jpg" alt="Atuhu Favourite">
-        <span>Atuhu Favourite</span>
-        <button id="darkModeToggle">Dark Mode</button>
         <!-- Hamburger menu icon for mobile view -->
-        <div class="menu-icon" onclick="toggleMenu()">
+        <div id="menuIcon" class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+        <img src="images/photo.jpg" alt="Atuhu Favourite">
+        <span>Atuhu Favourite</span>
+        <button id="darkModeToggle">Dark Mode</button>
     </header>
 
     <nav id="mainMenu">
@@ -57,7 +58,6 @@
     </footer>
 
     <script src="./scripts/getDates.js"></script>
-    <script src="./scripts/menuToggle.js"></script>
     
 </body>
 </html>

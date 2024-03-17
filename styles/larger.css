@@ -1,9 +1,38 @@
-/* Media Query for Larger Views */
+/* Media Query for mobile Views */
 @media screen and (min-width: 768px) {
-    /* Navigation Styles */
-    nav {
-        display: flex;
-        justify-content: center;
+    .menu-icon {
+        display: flex; /* Show the icon in mobile view */
+    
+    }
+
+    /* Additional styles for hiding/showing menu items */
+    #mainMenu {
+        display: none; /* Hide the main menu by default in mobile view */
+    }
+
+    #mainMenu.show {
+        display: block; /* Show the main menu when the .show class is added */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically in mobile view */
+        background-color: rgba(0, 0, 0, 0.9); /* Background color for mobile menu */
+        position: absolute;
+        top: 70px; /* Adjust as needed to position the menu below the header */
+        left: 0;
+        right: 0;
+        z-index: 1000; /* Ensure the menu is above other content */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav li {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    nav a {
+        font-size: 18px;
     }
 
     /* Main Content Styles */
@@ -20,8 +49,23 @@
     }
 }
 
+/* Dark Mode Button Styles */
+#darkModeToggle {
+    background-color: transparent; /* Transparent background for the button */
+    color: #fff; /* Text color */
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Adjust button font size */
+    padding: 5px 10px; /* Padding around the text */
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+}
+
+#darkModeToggle:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Background color on hover */
+}
+
 /* Dark Mode Styles */
 .dark-mode {
-    background-color: #111;
-    color: #fff;
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
 }
