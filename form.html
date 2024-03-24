@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atuhu Favourite - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Atuhu Favourite 'WDD 230 - Web Frontend Development">
+    <meta name="author" content="Atuhu Favourite">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oxygen:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.jpg">
+    <meta property="og:title" content="Atuhu Favourite - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ohayitsfay.github.io/wdd230/index.html">
+     
+</head>
+<body>
+    <header>
+        <img src="images/photo.jpg" alt="Atuhu Favourite Profile" width="75" height="100" id="profile">
+        <span>Atuhu Favourite</span>
+        <button id="darkBtn" >Dark Mode</button>
+    </header>
+    <nav>
+        <span id="menuBtn"></span>
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="week01/chamber-site-plan.html">Site Plan</a>
+        <a href="form.html" class="active">Form</a>
+    </nav>
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Course Proposal Application</h1>
+    <form action="thanks.html" method="get" class="wf1">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+            <label>Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+            <label>Website<input type="url" name="url" placeholder="https://"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <label><input type="radio" name="audience" value="beginner">Beginner</label>
+            <label><input type="radio" name="audience" value="beginner">Intermediate</label>
+            <label><input type="radio" name="audience" value="beginner">Advanced</label>
+
+            <div>Software Needed</div>
+            <label><input type="checkbox" name="code" value="yes">Coding</label>
+            <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+            <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+            <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Funding</legend>
+            <label>Anticipated Completion Date<input type="date" name="completeDate"></label>
+            <label>Course Subject 
+                <select name="subject">
+                    <option value="" disabled selected>Select One&#9662;</option>
+                    <option value="business">Business Professional</option>
+                    <option value="construction">Construction</option>
+                    <option value="creative">Creative Professional</option>
+                    <option value="security">Cyber Security</option>
+                    <option value="data">Data Professional</option>
+                    <option value="info">Information Technology</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="software">Software Development</option>
+                    
+                    
+                    
+                    
+                    
+                </select>
+            </label>
+            <label>How Many Authors <input type="number" name="authors"></label>
+        </fieldset>
+        <input type="submit" value="Propose My Course">
+    </form>
+        
+
+          
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <p>&copy;<span id="year"></span> .:|:. Atuhu Favourite .:|:. Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getInfoDetails.js"></script>
+</body>
+</html>
