@@ -1,92 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ikeja Chamber of Commerce</title>
-    <meta name="description" content="course assignment portal for WDD 230 - Web Frontend Development">
+    <meta name="description" content="Ikeja Chamber of Commerce discover page for WDD 230.">
     <meta name="author" content="Atuhu Favourite">
+    <meta property="og:title" content="Atuhu Favourite - WDD 230 - Chamber of Commerce Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ohayitsfay.github.io/wdd230/chamber/discover.html">
+    <meta property="og:image" content="https://www.bing.com/maps?osid=2003d3e8-9083-49c3-a4be-9480559ec851&cp=6.596061~3.335466&lvl=16&pi=0&v=2&sV=2&form=S00027">
+    <title>Ikeja Chamber of Commerce | Discover</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="" rel="stylesheet">
-    <meta property="og:title" content="Ikeja Chamber of Commerce Website">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ohayitsfay.github.io/wdd230/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.webp">
 </head>
-<body class="discover">
+<body>
     <header>
-        <img src="images/logo.jpeg" alt="chamber of commerce logo">
-        <h1>Ikeja Chamber of Commerce</h1>
+        <img src="images/logo.webp" alt="Ikeja chamber Logo" height="100">
+        <div>
+            <h1>Ikeja Chamber of Commerce</h1>
+        </div>
+        <div id="hamburgerButton">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     </header>
+    
     <nav>
-        <button id="myButton"></button>
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+            <li class="active"><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="sidebar">
-            <section>
-                <h2>Demographics</h2>
-                <p>Ikeja, the capital city of Lagos State in southwestern Nigeria, has a rich history and vibrant present. It boasts a population of 393,196 residents,It lies 10.5 miles (17 km) northwest of Lagos city. </p>
-            </section>
-            <section>
-                <h2>Statistical data</h2>
-                <p></p>
-            </section>
-            <section>
-                <h2>Historical Events</h2>
-                <p>Ikeja was the capital of  on three occasions: in 1812 when the public powers of the Provisional Government were transferred there during the Venezuelan War of Independence, and provisionally in 1830 with the dissolution of Gran Colombia and in 1858 when the March Revolution triumphed.
-                    During the Venezuelan War of Independence, Valencia was the scene of great events, the most famous of which was the Battle of Carabobo on June 24, 1821.</p>
-            </section>
-            <section>
-                <h2>Attractions</h2>
-                <p></p>
-            </section>
-            <section class="visits"></section>
-        </div>
-        <div class="images-container">
-            <picture>
-                <img class="img-discover" src="images/" alt="Emblematic Arco Carabobo in Valencia" loading="lazy" width="500" height="400">
-                <figcaption>Arc of Carabobo, Symbol of the Independency</figcaption>
-            </picture>
-            <picture>
-                <img class="img-discover" src="images/" alt="Bolivar Square in Valencia" loading="lazy" width="500" height="400">
-                <figcaption>Bolivar Square</figcaption>
-            </picture>
-            <picture>
-                <img class="img-discover" src="images/" alt="Municipal theater in Valencia" loading="lazy" width="500" height="400">
-                <figcaption>Municipal Theather</figcaption>
-            </picture>
-        </div>
-    </main>
-    
 
-    <footer>
-        <div class="footer-left">
-            <img src="images/logo.jpeg" alt="Ikeja Chamber Logo">
-            <div class="f-left-info">
-                <h2>Ikeja Chamber of Commerce</h2>
-                <p>8A Oba Akinjobi Way, Ikeja-GRA, Lagos</p>
+    <main>
+        <div class="grid-container sidebar">
+            <div>
+                <div class="card">
+                    <p class="visit"></p>
+                </div>
+                <div class="card">
+                    <h2>Demographics 🗺️</h2>
+                    <hr>
+                    <h3>City Area</h3>
+                    <ul>
+                        <li>19.27 Square Miles</li>
+                        <li>Latitude 6.60 N, Longitude 3.35 E</li>
+                    </ul>
+                    <h3>References</h3>
+                    <ul>
+                        <h3><a href="https://www.citypopulation.de/en/nigeria/metrolagos/">City Population (Retrieved 28 November 2015)</a></h3> 
+                        <h3><a href="https://www.nigeriagalleria.com/Nigeria/States_Nigeria/Lagos/History-of-Ikeja-in-Lagos.html">History of Ikeja City</a></h3>
+                        <h3><a href="https://www.britannica.com/place/Ikeja">Location, Facts, & Population</a></h3>
+                        <h3><a href="https://books.google.com.ng/books?id=pqe1SQAACAAJ&redir_esc=y">General Books LLC</a></h3>
+                        
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Explore Our Community 🗺️</h2>
+                    <hr>
+                    <ul>
+                        <li>Ikeja is the commercial nerve of Lagos. One of the very popular spots in Ikeja is the large computer and computer accessories hub known as computer village. It serves as the trademark of the city itself as computer professionals buy and sell in thes particular district.</li>
+                        <li>Many companies and commercial openings have their head offices in Ikeja because of its centrality.The city is indeed a place of commerce on a large scale.</li>
+                        <li>Popular places to visit in Ikeja are </li>
+                            <h3><a href="https://felakuti.com">Kalakuta Museum</a></h3>
+                            <h3><a href="https://lasparkportal.lagosstate.gov.ng">Ndubuisi Kanu Park</a></h3>
+                            <h3><a href="https://felakuti.com">Kalakuta Museum</a></h3>
+                            <h3>Aristocrat Casino</h3>
+                            <h3><a href="https://felakuti.com/legacy/new-afrika-shrinez">Fela Shrine</a></h3>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Shop Local 🛒</h2>
+                    <hr>
+                    <ul>
+                        <li>This section highlights the diverse range of businesses in the city, including retail stores, boutiques, and online shops.</li>
+                        <li>Visitors can explore featured businesses, browse categories such as fashion, home goods, and gifts, and learn about special promotions or discounts offered by Ikeja chamber members.</li>
+                        <h3><a href="https://ikejacitymall.com.ng">Ikeja City Mall</Schoola></h3>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Public Notice 📝</h2>
+                    <hr>
+                    <h3>Talent Discovery and Promotion Meeting</h3>
+                    <p>
+                        There will be a Talent Discovery and Promotion Me on Monday, April 30, 2024 at 5:00 p.m. at the City Town Square. There are two items on the work session agenda: 
+                    </p>
+                        <ul>
+                            <li>Discussion of platform set up for rewarding, discovering, and promoting</li>
+                            <li>Discussion of growth and recognition opportunities for aspiring entrepreneurs, or an established business owner.</li>
+                        </ul>
+                </div>
+                <div class="card">
+                    <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker"></span>
+                        <div class="year-picker" id="year-picker">
+                        <span class="year-change" id="pre-year">
+                            &lt;
+                        </span>
+                        <span id="current-year"> </span>
+                        <span class="year-change" id="next-year">
+                            >
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="calendar-body">
+                        <div class="calendar-week-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                        </div>
+                        <div class="calendar-days">
+                        </div>
+                    </div>
+                    <div class="calendar-footer">
+                    </div>
+                    <div class="date-time-formate">
+                        <div class="day-text-formate">TODAY</div>
+                        <div class="date-time-value">
+                        <div class="time-formate"></div>
+                        <div class="date-formate"></div>
+                        </div>
+                    </div>
+                    <div class="month-list"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+                <div class="img-card">
+                    <img src="images/picture1.webp" alt="Explore the city" width="500" height="300" loading="lazy">
+                    <h2>Explore the City</h2>  
+                </div>
+                <div class="img-card">
+                    <img src="images/picture2.webp" alt="Tourist Attractions" width="500" height="300" loading="lazy">
+                    <h2>Tourist Attractions</h2>
+                </div>
+                <div class="img-card">
+                    <img src="images/picture3.webp" alt="Dine Out" width="500" height="300" loading="lazy">
+                    <h2>Dine Out</h2>
+                </div>
+                <div class="img-card">
+                    <img src="images/picture4.webp" alt="Town Square" width="500" height="300" loading="lazy">
+                    <h2>Town Square</h2>
+                </div>
+                <div class="img-card">
+                    <img src="images/picture5.webp" alt="Support" width="500" height="300" loading="lazy">
+                   <h2>Support Local</h2>
+                </div>
+                <div class="img-card">
+                    <img src="images/picture6.webp" alt="Find Services" width="500" height="300" loading="lazy">
+                    <h2>Find Services</h2>
+                </div>
+                
+                
+                
+                
             </div>
         </div>
-        <div class="footer-right">
-            <p>info@ikejacc.org</p>
-            <p>+234 903 785 6229</p>
-            <p>Website</p>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <img src="images/logo.webp" alt="Ikeja chamber Logo" height="100">
+                <p>Ikeja<br> Chamber of Commerce <br>8A Oba Akinjobi Way, Ikeja-GRA <br>Lagos, Nigeria</p>
+            </div>
+            <p>info@ikejacc.org <br>+234 903 785 6229 <br>📍Location Map</p>
         </div>
-        <div class="footer-bottom">
-            <p>&#169;<span id="currentYear"></span> - Atuhu Favourite - WDD230 Project - Venezuela</p>
-            <p>Last Modification: <a id="placeholder"></a></p>
+            
+        <hr>
+        <div class="develop">
+            <p>&copy;<span id="year"></span> Ikeja Chamber of Commerce</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>Atuhu Favourite</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>WDD 230 Project</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
-
-    <script src="scripts/main.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

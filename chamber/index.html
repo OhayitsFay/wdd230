@@ -1,104 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ikeja Chamber of Commerce</title>
-    <meta name="description" content="course assignment portal for WDD 230 - Web Frontend Development created by Atuhu Favourite">
+    <meta name="description" content="Ikeja Chamber of Commerce home page for WDD 230.">
     <meta name="author" content="Atuhu Favourite">
+    <meta property="og:title" content="Atuhu Favourite - WDD 230 - Chamber of Commerce Website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ohayitsfay.github.io/wdd230/chamber/">
+    <meta property="og:image" content="https://www.bing.com/maps?osid=2003d3e8-9083-49c3-a4be-9480559ec851&cp=6.596061~3.335466&lvl=16&pi=0&v=2&sV=2&form=S00027">
+    <title>Ikeja Chamber of Commerce | Home</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Ikeja Chamber of Commerce Website">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://prodavinci.wpenginepowered.com/wp-content/uploads/2022/03/img-val-071.jpg">
-    <meta property="og:url" content="https://ohayitsfay.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="images/favicon.webp">
 </head>
 <body>
     <header>
-        <img src="images/logo.jpeg" alt="chamber of commerce logo">
-        <h1>Ikeja Chamber of Commerce</h1>
+        <img src="images/logo.webp" alt="Ikeja chamber Logo" height="100">
+        <div>
+            <h1>Ikeja Chamber of Commerce</h1>
+        </div>
+        <div id="hamburgerButton">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
     </header>
+    
     <nav>
-        <button id="myButton"></button>
         <ul class="menuLinks">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <div class="hero-container">
-        <img src="images/hero.webp" alt="Hero image for Valencia Chamber of Commerce" class="hero-img">
-        <button class="btn btn-join">Join the Chamber</button>
-    </div>
-    <div class="card-section-container">
-        <section class="event-card card">
-            <h2 class="card-title">Events</h2>
-            <div class="card-content">
-                <p>Say goodbye to single-use plastics with our durable and stylish bamboo utensil sets, perfect for on-the-go use.</p>
-                <p>Keep your home clean and green with our range of biodegradable cleaning products, safe for your family and the planet. </p>
-                <p>Make a statement with our eco-conscious stationery made from recycled paper, ideal for office use or personal notes.</p>
-                <p>Join us for the great opening of the GreenLeaf Eco-Friendly Products, Monday at 11:00 am</p>
-            </div>
-        </section>
-        <section class="weather-card card">
-            <h2 class="card-title">Weather</h2>
-            <div class="card-content">
-                <p>Temperature: 33° C </p>
-                <p>Weather: Mostly Sunny</p>
-                <p>Humidity: 68%</p>
-                <p>Wind Chill: 15 KMPH</p>
-            </div>
-        </section>
-    </div>
-    <div class="card-spotlight-container">
-        <h1 class="news">Recent New</h1>
-        <section class="spotlight-card card">
-            <div class="card-content">
-                <img src="images/card1.webp" alt="cedgvbhjssbhj">
-                <h2 class="card-tittle">Fay Technology</h2>
-                <p>At XYZ Technologies, we prioritize customer satisfaction and strive to exceed expectations with every project. Contact us today to discover how we can help your business succeed in the digital landscape.</p>
-            </div>
-        </section>
-        <section class="spotlight-card card">
-            <div class="card-content">
-                <img src="images/card2.webp" alt="cedgvbhjssbhj">
-                <h2 class="card-tittle">Sunrise Fitness Center</h2>
-                <p>Whether you're looking to lose weight, build muscle, or improve your overall fitness, Sunrise Fitness Center is here to support you every step of the way. Join our community today and start your journey to a healthier you!</p>
-            </div>
-        </section>
-        <section class="spotlight-card card">
-            <div class="card-content">
-                <img src="images/card3.webp" alt="cedgvbhjssbhj">
-                <h2 class="card-tittle">GreenLeaf Eco-Friendly Products</h2>
-                <p>Join us in our mission to create a greener, more sustainable world. Visit GreenLeaf today to explore our full range of eco-friendly products.</p>
-            </div>
-        </section>
-    </div>
 
+    <main>
+
+        <div class="hero">
+            <img src="images/hero.webp" alt="Hero Image Chamber of Commerce">
+            <a href="join.html">
+                <button class="callToAction">Join the Chamber</button>
+            </a>
+        </div>
+        <hr>
+        
+        <div class="grid-container">
+            <section class="events card">
+                <h2>Events</h2>
+                <h3>GreenLeaf Eco-Friendly Products</h3>
+                <p>Say goodbye to single-use plastics with our durable and stylish bamboo utensil sets, perfect for on-the-go use.</p>
+                <p>Keep your home clean and green with our range of biodegradeable cleaning products, safe for your family and the planet.</p>
+                <p>Make a statement with our eco-concious stationery made from recycled paper, ideal for office use or personal notes.</p>
+                <p>Join us for the great opening of the GreenLeaf Eco-Friendly Products, Monday at 11:00 am</p>
+                <p><a href="">Click here</a> to find out more.</p>
+            </section>
+
+            <section class="weather card">
+                <h2>Weather</h2>
+                <hr>
+                <div>
+                    <div>
+                        <img src="images/sunny.webp" alt="forecast" class="forecast" height="50" width="50">
+                        <p class="temp">33°C</p>
+                        <p class="forecast"><strong>Mostly sunny</strong></p>
+                        <p>Humidity: </p>
+                        <span>68%</span>
+                        <p>Wind Chill: </p>
+                        <span>15 KMPH</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div class="card">
+                    <img src="images/card1.webp" alt="Arnold and Arnold law firm logo">
+                    <h3>Fay Technology</h3>
+                    <p>At Fay Technologies, we priortize customer satisfaction and strive to exceed expectations with every project.</p>
+                    <p>Contact us today to discover how we can help your business succeed in the digital landscape.</p>
+                </div>
+                <div class="card">
+                    <img src="images/card2.webp" alt="DGR's Clubhouse logo">
+                    <h3>Sunrise Fitness Center</h3>
+                    <p>Whether you are looking to lose weight, build muscle, or improve your overall fitness, Sunrise Fitness Center is here to support you every step of the way.</p>
+                    <p>Join our community today and start your journeyto a healthier you.</p>
+                </div>
+                <div class="card">
+                    <img src="images/card3.webp" alt="Needle in a haystack logo">
+                    <h3>GreenLeaf Eco-Friendly Products</h3>
+                    <p>Join us in our mission to create a greener, more sustainable world.</p>
+                    <p>Visit GreenLeaf today to explore our full range of eco-friendly product.</p>
+                </div>
+            </section>
+        </div>
+        
+
+    </main>
     <footer>
-        <div class="footer-left">
-            <img src="images/logo.jpeg" alt="Ikeja Chamber Logo">
-            <div class="f-left-info">
-                <h2>Ikeja Chamber of Commerce</h2>
-                <p>8A Oba Akinjobi Way, Ikeja-GRA, Lagos</p>
+        <div class="contact">
+            <div>
+                <img src="images/logo.webp" alt="Ikeja chamber Logo" height="100">
+                <p>Ikeja<br> Chamber of Commerce <br>8A Oba Akinjobi Way, Ikeja-GRA <br>Lagos, Nigeria</p>
             </div>
+            <p>info@ikejacc.org <br>+234 903 785 6229 <br>📍Location Map</p>
         </div>
-        <div class="footer-right">
-            <p> info@ikejacc.com</p>
-            <p>+234 903 785 6229</p>
-            <p>Website</p>
-        </div>
-        <div class="footer-bottom">
-            <p>&#169;<span id="currentYear"></span> - Atuhu Favourite - WDD230 Project - Ikeja</p>
-            <p id="lastModified"></p>
+            
+        <hr>
+        <div class="develop">
+            <p>&copy;<span id="year"></span> Ikeja Chamber of Commerce</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>Atuhu Favourite</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>WDD 230 Project</p><span class="marker">&nbsp;|&nbsp;</span>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
-
-    <script src="scripts/main.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
